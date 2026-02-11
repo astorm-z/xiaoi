@@ -1,0 +1,10 @@
+node_modules
+log
+*.log
+.git
+.gitignore
+.vscode
+.claude
+.mi.json
+config.json
+test

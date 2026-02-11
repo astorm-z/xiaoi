@@ -1,0 +1,12 @@
+services:
+  xiaoi:
+    build: .
+    container_name: xiaoi
+    restart: unless-stopped
+    ports:
+      - "3088:3088"
+    volumes:
+      - ./data:/root/.xiaoi
+    environment:
+      - XIAOI_NO_UPDATE_CHECK=1
+      - XIAOI_WEBHOOK_HOST=0.0.0.0
